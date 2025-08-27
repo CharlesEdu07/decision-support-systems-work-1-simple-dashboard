@@ -11,41 +11,41 @@ from flask import Flask
 
 dados_oficina_json = {
     "2023": {
-        "Janeiro": {"receita": 15600.96, "despesas": 9140.9, "lucro": 6460.06},
-        "Fevereiro": {"receita": 14306.85, "despesas": 8521.07, "lucro": 5785.78},
-        "Março": {"receita": 6239.25, "despesas": 2194.52, "lucro": 4044.73},
-        "Abril": {"receita": 3354.84, "despesas": 1882.22, "lucro": 1472.62},
-        "Maio": {"receita": 14911.89, "despesas": 6106.07, "lucro": 8805.82},
-        "Junho": {"receita": 11620.73, "despesas": 5054.68, "lucro": 6566.05},
-        "Julho": {"receita": 9825.83, "despesas": 6885.68, "lucro": 2940.15},
-        "Agosto": {"receita": 3664.21, "despesas": 1646.87, "lucro": 2017.34},
-        "Setembro": {"receita": 6829.18, "despesas": 3939.14, "lucro": 2890.04},
-        "Outubro": {"receita": 7948.74, "despesas": 5191.32, "lucro": 2757.42},
-        "Novembro": {"receita": 9598.8, "despesas": 5657.86, "lucro": 3940.94},
-        "Dezembro": {"receita": 10743.76, "despesas": 4540.9, "lucro": 6202.86}
+        "Janeiro": {"receita": 4200.50, "despesas": 2480.30, "lucro": 1720.20},
+        "Fevereiro": {"receita": 3850.40, "despesas": 2100.75, "lucro": 1749.65},
+        "Março": {"receita": 2950.80, "despesas": 1420.35, "lucro": 1530.45},
+        "Abril": {"receita": 2680.90, "despesas": 1315.60, "lucro": 1365.30},
+        "Maio": {"receita": 5140.25, "despesas": 2785.70, "lucro": 2354.55},
+        "Junho": {"receita": 4620.10, "despesas": 2295.45, "lucro": 2324.65},
+        "Julho": {"receita": 3975.35, "despesas": 2460.90, "lucro": 1514.45},
+        "Agosto": {"receita": 3100.60, "despesas": 1685.40, "lucro": 1415.20},
+        "Setembro": {"receita": 3525.70, "despesas": 1940.25, "lucro": 1585.45},
+        "Outubro": {"receita": 3890.85, "despesas": 2105.30, "lucro": 1785.55},
+        "Novembro": {"receita": 4450.40, "despesas": 2570.75, "lucro": 1879.65},
+        "Dezembro": {"receita": 4985.25, "despesas": 2430.10, "lucro": 2555.15}
     },
     "2024": {
-        "Janeiro": {"receita": 14106.28, "despesas": 5292.41, "lucro": 8813.87},
-        "Fevereiro": {"receita": 13418.1, "despesas": 6024.92, "lucro": 7393.18},
-        "Março": {"receita": 8721.7, "despesas": 3137.77, "lucro": 5583.93},
-        "Abril": {"receita": 3863.93, "despesas": 2762.96, "lucro": 1100.97},
-        "Maio": {"receita": 13853.84, "despesas": 8749.91, "lucro": 5103.93},
-        "Junho": {"receita": 10736.79, "despesas": 7504.59, "lucro": 3232.2},
-        "Julho": {"receita": 4293.24, "despesas": 1549.77, "lucro": 2743.47},
-        "Agosto": {"receita": 4113.87, "despesas": 2743.81, "lucro": 1370.06},
-        "Setembro": {"receita": 4033.51, "despesas": 1940.3, "lucro": 2093.21},
-        "Outubro": {"receita": 9679.79, "despesas": 5844.62, "lucro": 3835.17},
-        "Novembro": {"receita": 8635.23, "despesas": 6197.2, "lucro": 2438.03},
-        "Dezembro": {"receita": 12000.3, "despesas": 4647.11, "lucro": 7353.19}
+        "Janeiro": {"receita": 4325.30, "despesas": 2275.20, "lucro": 2050.10},
+        "Fevereiro": {"receita": 4180.60, "despesas": 2390.45, "lucro": 1790.15},
+        "Março": {"receita": 3655.75, "despesas": 1870.35, "lucro": 1785.40},
+        "Abril": {"receita": 2850.90, "despesas": 1510.70, "lucro": 1340.20},
+        "Maio": {"receita": 4720.40, "despesas": 2885.30, "lucro": 1835.10},
+        "Junho": {"receita": 3950.65, "despesas": 2165.55, "lucro": 1785.10},
+        "Julho": {"receita": 3125.10, "despesas": 1540.25, "lucro": 1584.85},
+        "Agosto": {"receita": 2980.35, "despesas": 1655.20, "lucro": 1325.15},
+        "Setembro": {"receita": 3410.50, "despesas": 1725.35, "lucro": 1685.15},
+        "Outubro": {"receita": 4280.70, "despesas": 2520.40, "lucro": 1760.30},
+        "Novembro": {"receita": 3965.85, "despesas": 2365.20, "lucro": 1600.65},
+        "Dezembro": {"receita": 5100.20, "despesas": 2620.30, "lucro": 2479.90}
     },
     "2025": {
-        "Janeiro": {"receita": 11740.7, "despesas": 5488.78, "lucro": 6251.92},
-        "Fevereiro": {"receita": 15397.16, "despesas": 5949.39, "lucro": 9447.77},
-        "Março": {"receita": 7069.13, "despesas": 3112.66, "lucro": 3956.47},
-        "Abril": {"receita": 8448.54, "despesas": 4232.29, "lucro": 4216.25},
-        "Maio": {"receita": 15482.25, "despesas": 7223.45, "lucro": 8258.8},
-        "Junho": {"receita": 14303.99, "despesas": 7300.8, "lucro": 7003.19},
-        "Julho": {"receita": 9398.23, "despesas": 6035.47, "lucro": 3362.76}
+        "Janeiro": {"receita": 3820.40, "despesas": 1920.30, "lucro": 1900.10},
+        "Fevereiro": {"receita": 4590.25, "despesas": 2285.75, "lucro": 2304.50},
+        "Março": {"receita": 3480.60, "despesas": 1795.40, "lucro": 1685.20},
+        "Abril": {"receita": 3760.75, "despesas": 1985.35, "lucro": 1775.40},
+        "Maio": {"receita": 5280.90, "despesas": 2710.40, "lucro": 2570.50},
+        "Junho": {"receita": 4940.80, "despesas": 2490.35, "lucro": 2450.45},
+        "Julho": {"receita": 4120.65, "despesas": 2135.30, "lucro": 1985.35}
     }
 }
 
